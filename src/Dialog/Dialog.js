@@ -257,7 +257,7 @@ class DialogInline extends Component {
   };
 
   handleKeyUp = (event) => {
-    if (keycode(event) === 'esc') {
+    if (keycode(event) === 'esc' && event.target === this) {
       this.requestClose(false);
     }
   };
